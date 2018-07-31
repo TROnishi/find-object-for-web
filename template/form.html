@@ -1,0 +1,17 @@
+<html>
+    <body>
+        
+        画像をアップロードしてください。<br>
+        アップロードした画像中の物体を検出結果を返します。<br>
+        <form action="{% url 'form' %}" method="POST" enctype="multipart/form-data">
+            {%  csrf_token %}
+            <br>
+            {{form}}
+            <br>
+            <input type="submit" name="botan", value="送信">
+            <br>
+            
+            
+        </form>
+    </body>
+</html>
